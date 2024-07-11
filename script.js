@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (targetSection) {
                 const targetPosition = targetSection.offsetTop - document.querySelector('.tabs-container').offsetHeight;
-                smoothScrollTo(targetPosition, 2000); // 1000ms = 1 second
+                smoothScrollTo(targetPosition, 1000); // 1000ms = 1 second
             }
         });
     });
