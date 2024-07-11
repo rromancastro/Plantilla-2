@@ -21,12 +21,13 @@ nav {
 }
 
 .tabs-container {
-    margin: 10px;
+    margin: 0 20px;
     overflow-x: auto;
     white-space: nowrap;
     background-color: #D9D9D9;
     padding: 10px;
-    border-radius: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 .tabs {
@@ -50,4 +51,9 @@ nav {
 
 .tab:hover {
     border: 2px solid orangered;
+}
+
+.menu {
+    position: sticky;
+    top: 15px;
 }

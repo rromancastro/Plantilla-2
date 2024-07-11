@@ -1,15 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll('nav a[href^="#"]');
+    const links = document.querySelectorAll('.tabs a[href^="#"]');
 
-    for (const link of links) {
+    links.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
 
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - document.querySelector('.tabs-container').offsetHeight;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         });
-    }
+    });
 });
