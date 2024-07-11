@@ -41,6 +41,7 @@ nav img {
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  color: #2e2e2e;
 }
 
 .card {
@@ -62,10 +63,19 @@ nav img {
   width: 30%;
   object-fit: cover;
   border-radius: 10px;
+  object-position: center;
 }
 .card h3 {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: #3a3a3a;
 }
 
 .pCard {
@@ -74,6 +84,8 @@ nav img {
 }
 
 .precio {
+  width: 35px;
+  text-align: center;
   font-size: 11px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -82,17 +94,24 @@ nav img {
   display: inline-block;
   padding: 2px;
   border-radius: 5px;
+  text-wrap: nowrap;
 }
 
-.milanesas {
+.pE {
+  width: 60px;
+}
+
+.menuSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
+  gap: 10px;
 }
-.milanesas h2 {
+.menuSection h2 {
   align-self: flex-start;
   font-family: "Roboto", sans-serif;
+  color: #2e2e2e;
 }
 
 * {
