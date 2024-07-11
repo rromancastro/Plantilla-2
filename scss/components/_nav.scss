@@ -28,10 +28,14 @@ nav {
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
 }
 
 .tabs {
     display: inline-block;
+    transition: .5s;
 }
 
 .tab {
@@ -50,10 +54,11 @@ nav {
 }
 
 .tab:hover {
-    border: 2px solid orangered;
+    box-shadow: 0px 0px 0px 1.5px orangered inset;
+-webkit-box-shadow: 0px 0px 0px 1.5px orangered inset;
+-moz-box-shadow: 0px 0px 0px 1.5px orangered inset;
 }
-
 .menu {
     position: sticky;
-    top: 15px;
+    top: 10px;
 }
