@@ -55,3 +55,25 @@
 .pE {
     width: 60px;
 }
+
+@media(min-width: 450px) {
+    .card {
+        height: 150px;
+        img {
+            height: 120px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+    }
+    .pCard {
+        font-size: 20px;
+    }
+    .precio {
+        font-size: 20px;
+        width: 60px;
+    }
+    .pE {
+        width: 100px;
+    }
+}
